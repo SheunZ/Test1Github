@@ -8,7 +8,7 @@ Bleu nuit profond, rubans de lumière néon (cyan → bleu électrique → viole
 | `output/<résolution>/neon-abyss-verrouillage.mp4` | Écran de verrouillage animé — haut dégagé et assombri pour l'horloge |
 | `output/<résolution>/*.png` | Versions fixes |
 
-Résolutions disponibles : `1440x3200` (QHD+) et `1080x2340` (FHD+).
+Résolutions disponibles : `1440x3200` (QHD+), `1080x2340` (FHD+) et `2200x2200` (écran intérieur des pliables déplié — carré, recadré automatiquement en portrait comme en paysage).
 | `wallpaper.html` | Version web interactive (`?mode=home`, `?mode=lock`, `?mode=lock&clock=1` pour l'aperçu avec horloge) |
 | `render.cjs` | Regénère les vidéos : `node render.cjs [largeur] [hauteur] [fps]` (Playwright + ffmpeg) |
 

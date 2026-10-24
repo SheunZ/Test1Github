@@ -12,7 +12,7 @@ const [W = 1080, H = 2340, FPS = 30] = process.argv.slice(2).map(Number);
 const SECONDS = 12; // doit correspondre à LOOP_SECONDS dans wallpaper.html
 const frames = SECONDS * FPS;
 const root = __dirname;
-const outDir = path.join(root, 'output');
+const outDir = path.join(root, 'output', `${W}x${H}`);
 mkdirSync(outDir, { recursive: true });
 
 const browser = await chromium.launch();

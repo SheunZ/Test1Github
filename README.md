@@ -4,9 +4,11 @@ Bleu nuit profond, rubans de lumière néon (cyan → bleu électrique → viole
 
 | Fichier | Usage |
 |---|---|
-| `output/neon-abyss-accueil.mp4` | Fond d'écran d'accueil animé (1080×2340, 30 fps) |
-| `output/neon-abyss-verrouillage.mp4` | Écran de verrouillage animé — haut dégagé et assombri pour l'horloge |
-| `output/*.png` | Versions fixes |
+| `output/<résolution>/neon-abyss-accueil.mp4` | Fond d'écran d'accueil animé (30 fps) |
+| `output/<résolution>/neon-abyss-verrouillage.mp4` | Écran de verrouillage animé — haut dégagé et assombri pour l'horloge |
+| `output/<résolution>/*.png` | Versions fixes |
+
+Résolutions disponibles : `1440x3200` (QHD+) et `1080x2340` (FHD+).
 | `wallpaper.html` | Version web interactive (`?mode=home`, `?mode=lock`, `?mode=lock&clock=1` pour l'aperçu avec horloge) |
 | `render.cjs` | Regénère les vidéos : `node render.cjs [largeur] [hauteur] [fps]` (Playwright + ffmpeg) |
 
@@ -15,4 +17,4 @@ Bleu nuit profond, rubans de lumière néon (cyan → bleu électrique → viole
 - **Android** : Paramètres → Fond d'écran → choisir la vidéo (Samsung : « Fond d'écran vidéo » sur l'écran de verrouillage ; ailleurs une appli comme *Video Live Wallpaper* fonctionne pour l'accueil).
 - **iPhone** : iOS n'accepte pas les vidéos en boucle directement ; convertir le MP4 en Live Photo (ex. *intoLive*), ou utiliser les PNG.
 
-Autre résolution (ex. 1440×3200) : `node render.cjs 1440 3200 30`.
+Autre résolution : `node render.cjs <largeur> <hauteur> 30` → `output/<largeur>x<hauteur>/`.
